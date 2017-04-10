@@ -1,13 +1,13 @@
 # Project 10 - Honeypot
 
-Time spent: **2** hours spent in total
+Time spent: ** ** hours spent in total
 
 > Objective: Setup a honeypot and provide a working demonstration of its features.
 
 ### Required: Overview & Setup
 
 - [ ] A basic writeup (250-500 words) on the `README.md` desribing the overall approach, resources/tools used, findings
-- [X] A specific, reproducible honeypot setup, ideally automated. There are several possibilities for this:
+- [ ] A specific, reproducible honeypot setup, ideally automated. There are several possibilities for this:
 	- A Vagrantfile or Dockerfile which provisions the honeypot as a VM or container
 	- A bash script that installs and configures the honeypot for a specific OS
 	- Alternatively, **detailed** notes added to the `README.md` regarding the setup, requirements, features, etc.
