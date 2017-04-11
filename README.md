@@ -13,8 +13,8 @@ Time spent: **8** hours spent in total
 ### Required: Demonstration
 
 - [x] A basic writeup of the attack (what offensive tools were used, what specifically was detected by the honeypot)
-- [ ] An example of the data captured by the honeypot (example: IDS logs including IP, request paths, alerts triggered)
-- [ ] A screen-cap of the attack being conducted
+- [x] An example of the data captured by the honeypot (example: IDS logs including IP, request paths, alerts triggered)
+- [x] A screen-cap of the attack being conducted
     
 ### Optional: Features
 - Honeypot
@@ -29,6 +29,22 @@ Time spent: **8** hours spent in total
 	- [ ] Additional attack demos/writeups
 	- [ ] Captured malicious payload
 	- [ ] Enhanced logging of exploit post-exploit activity (example: attacker-initiated commands captured and logged)
+
+
+## Successful Attempt using HonnyPotter
+
+I used HonnyPotter plugin in wordpress as a HonnyPotter to capture unsuccesful
+attempts at logging into a wordpress site.
+
+The username and the password that were used by the users were captured by the
+HonnyPotter Honeypot. HonnyPotter is a wordpress plugin.
+
+Screen cap:
+
+![Image](walkthrough.gif)
+
+
+## Failed Attempt using Modern Honey Network
 
 I will use Modern Honey Network honeypot since it makes deploying and managing
 secure honeypots extremely simple. I followed th instructions as mentioned in
