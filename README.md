@@ -1,6 +1,6 @@
 # Project 10 - Honeypot
 
-Time spent: **X** hours spent in total
+Time spent: **8** hours spent in total
 
 > Objective: Setup a honeypot and provide a working demonstration of its features.
 
@@ -109,11 +109,11 @@ $ ./install_hpfeeds.sh ; ./install_mnemosyne.sh ; ./install_honeymap.sh
 This will take ~10 mins. After this, check the supervisor process to make it all components were installed
 
 ```
-$ supervisorctl status
-geoloc                           RUNNING    pid 29334, uptime 0:02:22
-honeymap                         RUNNING    pid 29335, uptime 0:02:22
-hpfeeds-broker                   RUNNING    pid 10253, uptime 0:07:33
-mnemosyne                        RUNNING    pid 28222, uptime 0:06:09
+root@mhn-server:/opt/mhn/scripts# supervisorctl status
+geoloc                           RUNNING    pid 10892, uptime 0:22:32
+honeymap                         RUNNING    pid 10893, uptime 0:22:32
+hpfeeds-broker                   RUNNING    pid 10132, uptime 1:00:52
+mnemosyne                        RUNNING    pid 29065, uptime 0:00:14
 ```
 Important: Since this is a private network deployment, you need to change a mnemosyne config option to support this. In the server vm, edit /opt/mnemosyne/mnemosyne.cfg and change ignore_rfc1918 to False:
 
@@ -132,11 +132,11 @@ The script will prompt you for values (choose whatever you like for Superuser pa
 
 ```
 Do you wish to run in Debug mode?: y/n n
-Superuser email: YOUR-EMAIL@YOUR-SITE.com
+Superuser email: sammanthp007@gmail.com
 Superuser password:
 Superuser password: (again):
-Server base url ["http://1.2.3.5"]: http://10.254.254.100
-Honeymap url ["http://1.2.3.5:3000"]: http://10.254.254.100:3000
+Server base url ["http://138.238.231.234"]:
+Honeymap url [":3000"]:
 Mail server address ["localhost"]:
 Mail server port [25]:
 Use TLS for email?: y/n y
@@ -145,6 +145,7 @@ Mail server username [""]:
 Mail server password [""]:
 Mail default sender [""]:
 Path for log file ["/var/log/mhn/mhn.log"]:
+
 ```
 The script will complete in about ~10 mins. When it completes, exit the superuser shell and the server VM by running the exit command twice to return to your host machine:
 
