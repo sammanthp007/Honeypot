@@ -1,6 +1,6 @@
 # Project 10 - Honeypot
 
-Time spent: **8** hours spent in total
+Time spent: **20** hours spent in total
 
 > Objective: Setup a honeypot and provide a working demonstration of its features.
 
